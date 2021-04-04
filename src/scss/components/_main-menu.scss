@@ -1,0 +1,14 @@
+.main-menu {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu__item {
+    list-style-type: none;
+}
+
+.main-menu__item a {
+    font-size: 18px;
+    line-height: 1.5;
+    color: $colorDark;
+}

@@ -1,0 +1,33 @@
+.review-card {
+    max-width: 445px;
+    margin: 0 15px;
+    padding: 30px;
+    color: $colorDark;
+    border: 2px solid $colorLightGrey;
+    border-radius: 8px;
+}
+
+.review-card__top {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.review-card__avatar {
+    margin-right: 16px;
+}
+
+.review-card__name {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.review-card__profession {
+    font-size: 18px;
+    line-height: 26px;
+    color: $colorDarkrGrey;
+}
+
+.review-card__social {
+    display: flex;
+    justify-content: flex-end;
+}

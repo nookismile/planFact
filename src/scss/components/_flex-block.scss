@@ -1,0 +1,8 @@
+.flex-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-block__item {
+    flex: 1 1 50%;
+}

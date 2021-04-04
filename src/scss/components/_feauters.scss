@@ -1,0 +1,36 @@
+.feauters__item {
+    max-width: 334px;
+    padding: 24px;
+    background: linear-gradient(119.04deg, rgba(255, 255, 255, 0.91) -2.15%, rgba(255, 255, 255, 0.7) -2.15%, rgba(255, 255, 255, 0.69) 42.61%, rgba(255, 243, 243, 0.88) 98.71%);
+    backdrop-filter: blur(34px);
+    border-radius: 20px;
+
+    &:nth-child(2) {
+        margin-top: -45px;
+    }
+}
+
+.feauters__title {
+    font-size: 20px;
+    line-height: 26px;
+    color: $colorDark;
+}
+
+.feauters__text {
+    font-size: 16px;
+    line-height: 22px;
+    color: $colorGrey;
+}
+
+.feauters__data-text {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.feauters__data-text span {
+    display: inline-block;
+    padding: 2px 17px;
+    color: $colorWhite;
+    background-color: $colorOrange;
+    border-radius: 100px;
+}

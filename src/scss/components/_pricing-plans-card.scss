@@ -1,0 +1,32 @@
+.pricing-plans-card {
+    display: flex;
+    flex-direction: column;
+    color: $colorDark;
+    text-align: center;
+}
+
+.pricing-plan-card__title {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+
+.pricing-plans-card__price {
+    font-size: 56px;
+    line-height: 62px;
+}
+
+.pricing-plans-card__price sup,
+.pricing-plans-card__price sub {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.pricing-plans-card__list {
+
+}
+
+.pricing-plans-card__list-item {
+    list-style-type: none;
+}
+
