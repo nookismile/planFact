@@ -13,14 +13,13 @@ body {
     width: 100%;
     max-width: 1130px;
     margin: 0 auto;
-    padding: 0 10px;
-    // @media(max-width: 1300px) {
-    //     max-width: 1600px;
-    // }
+    padding: 0 15px;
 }
 
 a {
     text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 

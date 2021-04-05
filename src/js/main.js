@@ -4,43 +4,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // slider
 
-    let slideIndex = 1,
-        slides = document.querySelectorAll('.slider__item'),
-        prev = document.querySelector('.prev'),
-        next = document.querySelector('.next');
+    let slides = document.querySelectorAll('.slider__item'),
+        currentSlide = 0,
+        slideInterval = setInterval(nextSlide, 4000);
 
-    showSlides(slideIndex);
-
-    function showSlides(n) {
-
-        if (n > slides.length) {
-            slideIndex = 1;
-        }
-
-        if (n < 1) {
-            slideIndex = slides.length;
-        }
-
-        slides.forEach((item) => item.style.display = 'none');
-
-        slides[slideIndex - 1].style.display = 'block';
+    function nextSlide() {
+        slides[currentSlide].className = 'slider__item';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].className = 'slider__item active fade';
     }
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    prev.addEventListener('click', function () {
-        plusSlides(-1);
-    });
-
-    next.addEventListener('click', function () {
-        plusSlides(1);
-    });
-
-    // setInterval( plusSlides(n), 2000 );
 });

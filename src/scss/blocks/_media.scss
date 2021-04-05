@@ -1,6 +1,6 @@
 @media(max-width: 1000px) {
     .wrapper {
-        padding: 0 15px;
+        padding: 0 10px;
     }
 
     .section {
@@ -13,7 +13,9 @@
     }
 
     .header-inner {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .main-menu {
@@ -21,13 +23,20 @@
     }
 
     .slider__info-item {
-        flex-basis: 100%;
-        order: 2;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
         margin-bottom: 50px;
+        text-align: center;
 
         &:nth-child(2) {
-            flex-basis: 100%;
-            order: 1;
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+            -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                    order: 1;
             margin-left: 0;
         }
     }
@@ -51,7 +60,9 @@
     }
 
     .btn-wrapper {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .btn-wrapper {
@@ -60,10 +71,12 @@
     }
 
     .order__top-item {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
 
         &:nth-child(2) {
-            flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
         }
     }
 
@@ -72,14 +85,17 @@
     }
 
     .order__bottom {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .order__bottom-item {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
 
         &:nth-child(2) {
-            flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
         }
     }
 
@@ -89,6 +105,7 @@
 
     .feauters__item {
         margin: 0 auto;
+        padding: 12px;
 
         &:nth-child(2) {
             margin-top: 16px;
@@ -97,8 +114,11 @@
     }
 
     .action-list__items {
-        flex-wrap: wrap;
-        align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .action-list__icon {
@@ -107,12 +127,14 @@
     }
 
     .action-list__info {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         text-align: center;
     }
 
     .pricing-plans-list__item {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         padding: 40px 0;
         border-right: none;
         border-top: 1px solid $colorLightGrey;
@@ -153,5 +175,9 @@
         margin: 0;
         margin-bottom: 16px;
         padding: 18px;
+    }
+
+    .review-card__title {
+        width: 100%;
     }
 }

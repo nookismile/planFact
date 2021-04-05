@@ -1,2 +1,2 @@
-установка - npm install
+установка - npm install;
 запуск - gulp

@@ -1,6 +1,10 @@
 .action-list__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-bottom: 72px;
 
     &:last-child {
@@ -9,9 +13,15 @@
 }
 
 .action-list__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: 16px;
     padding: 13px;
     background-color: $colorWhite;
@@ -24,7 +34,9 @@
 }
 
 .action-list__info {
-    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
 }
 
 .action-list__title {
@@ -36,6 +48,7 @@
 
 .action-list__text {
     font-size: 18px;
+    font-weight: 300;
     line-height: 26px;
     color: $colorWhite;
     opacity: 0.8;

@@ -4,18 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>ПланФакт - тестовое</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <div class="site-container">
     @include('templates/header.html')
     @include('templates/main-screen.html')
-     <section class="section section--dark">
+    <section class="section section--dark">
       @include('templates/order.html')
     </section>
     <section class="section">
@@ -24,12 +25,6 @@
     <section class="section section--review">
       @include('templates/review.html')
     </section>
-   
-    
-  </div>
- 
-
-
 
   <script src="js/main.js"></script>
 </body>

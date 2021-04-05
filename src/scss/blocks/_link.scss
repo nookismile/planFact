@@ -12,6 +12,8 @@
     width: 0;
     height: 1px;
     background-color: $colorDark;
+    -webkit-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
     transition: width 0.3s ease;
 }
 

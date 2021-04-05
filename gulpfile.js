@@ -6,7 +6,7 @@ const {
 const sass = require('gulp-sass');
 const notify = require('gulp-notify');
 const postcss = require("gulp-postcss");
-const autoprefixer = require('autoprefixer');
+const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 const fileinclude = require('gulp-file-include');
@@ -23,43 +23,6 @@ const uglify = require('gulp-uglify-es').default;
 const gutil = require('gulp-util');
 const ftp = require('vinyl-ftp');
 
-
-const fonts = () => {
-    src('./src/fonts/**.ttf')
-        .pipe(ttf2woff())
-        .pipe(dest('./app/fonts/'))
-    return src('./src/fonts/**.ttf')
-        .pipe(ttf2woff2())
-        .pipe(dest('./app/fonts/'))
-}
-
-const cb = () => {}
-
-let srcFonts = './src/scss/_fonts.scss';
-let appFonts = './app/fonts/';
-
-
-const fontsStyle = (done) => {
-    let file_content = fs.readFileSync(srcFonts);
-
-    fs.writeFile(srcFonts, '', cb);
-    fs.readdir(appFonts, function(err, items) {
-        if (items) {
-            let c_fontname;
-            for (var i = 0; i < items.length; i++) {
-                let fontname = items[i].split('.');
-                fontname = fontname[0];
-                if (c_fontname != fontname) {
-                    fs.appendFile(srcFonts, '@include font-face("' + fontname + '", "' + fontname + '", 400);\r\n', cb);
-                }
-                c_fontname = fontname;
-            }
-        }
-    })
-
-    done();
-}
-
 const svgSprites = () => {
     return src('./src/img/icon-*.svg')
         .pipe(svgSprite())
@@ -73,7 +36,7 @@ const styles = () => {
 		.pipe(sass({
 			outputStyle: 'expanded'
 		}).on('error', notify.onError()))
-		.pipe(postcss([autoprefixer()]))
+		.pipe(autoprefixer())
 		.pipe(sourcemaps.write('.'))
 		.pipe(dest('./app/css/'))
 		.pipe(browserSync.stream());
@@ -126,8 +89,6 @@ const watchFiles = () => {
 	watch('./src/img/**.jpeg', imgToApp);
 	watch('./src/img/**.svg', svgSprites);
 	watch('./src/resources/**', resources);
-	watch('./src/fonts/**.ttf', fonts);
-	watch('./src/fonts/**.ttf', fontsStyle);
 	watch('./src/js/**/*.js', scripts);
 };
 
@@ -135,7 +96,7 @@ exports.styles = styles;
 exports.watchFiles = watchFiles;
 exports.fileinclude = htmlInclude;
 
-exports.default = series(clean, parallel(htmlInclude, scripts, fonts, resources, imgToApp, svgSprites), fontsStyle, styles, watchFiles);
+exports.default = series(clean, parallel(htmlInclude, scripts, resources, imgToApp, svgSprites), styles, watchFiles);
 
 const stylesBuild = () => {
 	return src('./src/scss/**/*.scss')
@@ -174,7 +135,7 @@ const scriptsBuild = () => {
 		.pipe(dest('./app/js'))
 }
 
-exports.build = series(clean, parallel(htmlInclude, scriptsBuild, fonts, resources, imgToApp, svgSprites), fontsStyle, stylesBuild);
+exports.build = series(clean, parallel(htmlInclude, scriptsBuild, resources, imgToApp, svgSprites), stylesBuild);
 
 
 
