@@ -1,0 +1,32 @@
+
+body {
+    position: relative;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $colorDark;
+
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 10px;
+    // @media(max-width: 1300px) {
+    //     max-width: 1600px;
+    // }
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+p {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 26px;
+    color: $colorDarkGrey;
+}

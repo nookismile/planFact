@@ -1,0 +1,24 @@
+.pricing-plans-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pricing-plans-list__item {
+    flex: 1;
+    padding: 0 46px;
+    list-style-type: none;
+    border-right: 1px solid $colorLightGrey;
+
+    &:first-child {
+        // padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+        border-right: none;
+    }
+}
+
+.pricing-plans-list__btn {
+    margin-bottom: 26px;
+}

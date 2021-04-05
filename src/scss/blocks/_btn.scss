@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    min-width: 200px;
+    padding: 15px 10px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $colorWhite;
+    text-align: center;
+    background-color: $colorOrange;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+
+    &:hover {
+       background-color: $colorDarkOrange;
+    }
+}
+
+.btn--light {
+    color: $colorOrange;
+    background-color: transparent;
+    border-color: $colorOrange;
+
+    &:hover {
+        color: $colorDarkOrange;
+        background-color: transparent;
+        border-color: $colorDarkOrange;
+     }
+}
+

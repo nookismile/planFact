@@ -44,3 +44,4 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // setInterval( plusSlides(n), 2000 );
 });
+//# sourceMappingURL=main.js.map

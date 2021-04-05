@@ -1,0 +1,79 @@
+.slider__wrapper {
+    position: relative;
+}
+
+.slider__info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slider__info-item {
+    flex-basis: 40%;
+    text-align: center;
+    
+    &:nth-child(2) {
+        flex-basis: 49%;
+        margin-left: 66px;
+    }
+}
+
+
+.slider__prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+            transition: 0.3s;
+  }
+ 
+  .slider__prev:hover .arrow-left {
+    opacity: 1;
+  }
+  .slider__prev .arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: url(../img/leftArrow.png) center no-repeat;
+    background-size: cover;
+    opacity: .4;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    -webkit-transition: 1s;
+            transition: 1s;
+  }
+  .slider__next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+            transition: 0.3s;
+    
+  }
+  
+  .slider__next:hover .arrow-right {
+    opacity: 1;
+  }
+  .slider__next .arrow-right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background: url(../img/rightArrow.png) center no-repeat;
+    background-size: cover;
+    opacity: .4;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    -webkit-transition: 1s;
+            transition: 1s;
+  }

@@ -1,0 +1,42 @@
+.action-list__items {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 72px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.action-list__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    padding: 13px;
+    background-color: $colorWhite;
+    border-radius: 100%;
+}
+
+.action-list__icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.action-list__info {
+    flex: 1 1 auto;
+}
+
+.action-list__title {
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 30px;
+    color: $colorWhite;
+}
+
+.action-list__text {
+    font-size: 18px;
+    line-height: 26px;
+    color: $colorWhite;
+    opacity: 0.8;
+}

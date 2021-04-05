@@ -1,0 +1,12 @@
+.btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-wrapper a {
+    margin-bottom: 15px;
+}
+
+.btn-wrapper a + a {
+    margin-left: 16px;
+}

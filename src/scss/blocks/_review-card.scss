@@ -1,0 +1,66 @@
+.review-card {
+    max-width: 445px;
+    margin: 0 15px;
+    margin-bottom: 30px;
+    padding: 30px;
+    color: $colorDark;
+    border: 2px solid $colorLightGrey;
+    border-radius: 8px;
+}
+
+.review-card__top {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review-card__avatar {
+    margin-bottom: 12px;
+    margin-right: 16px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.review-card__title {
+    margin-bottom: 12px;
+}
+
+
+.review-card__name {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.review-card__profession {
+    font-size: 18px;
+    line-height: 26px;
+    color: $colorDarkGrey;
+}
+
+.review-card__text {
+    margin-bottom: 29px;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.review-card__social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.review-card__social a {
+    display: inline-block;
+    margin-left: 20px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.review-card__social svg {
+    width: 18px;
+    height: 18px;
+}

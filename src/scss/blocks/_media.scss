@@ -1,0 +1,157 @@
+@media(max-width: 1000px) {
+    .wrapper {
+        padding: 0 15px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section--main {
+        padding-top: 10px;
+        // padding-bottom: 15px;
+    }
+
+    .header-inner {
+        justify-content: center;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .slider__info-item {
+        flex-basis: 100%;
+        order: 2;
+        margin-bottom: 50px;
+
+        &:nth-child(2) {
+            flex-basis: 100%;
+            order: 1;
+            margin-left: 0;
+        }
+    }
+
+    .tagline {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .main-screen__text {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .btn-wrapper {
+        justify-content: center;
+    }
+
+    .btn-wrapper {
+        max-width: none;
+        width: 100%;
+    }
+
+    .order__top-item {
+        flex-basis: 100%;
+
+        &:nth-child(2) {
+            flex-basis: 100%;
+        }
+    }
+
+    .order__top-item .text {
+        text-align: center;
+    }
+
+    .order__bottom {
+        flex-wrap: wrap;
+    }
+
+    .order__bottom-item {
+        flex-basis: 100%;
+
+        &:nth-child(2) {
+            flex-basis: 100%;
+        }
+    }
+
+    .feauters {
+        margin-bottom: 60px;
+    }
+
+    .feauters__item {
+        margin: 0 auto;
+
+        &:nth-child(2) {
+            margin-top: 16px;
+            margin-left: auto;
+        }
+    }
+
+    .action-list__items {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .action-list__icon {
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+    .action-list__info {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .pricing-plans-list__item {
+        flex-basis: 100%;
+        padding: 40px 0;
+        border-right: none;
+        border-top: 1px solid $colorLightGrey;
+
+        &:first-child {
+            padding-top: 0;
+            border-top: none;
+        }
+    }
+}
+
+
+@media(max-width: 600px) {
+    .section--review {
+        padding-top: 0;
+    }
+
+    .btn-wrapper a+a {
+        margin-left: 0;
+    }
+
+    .btn-wrapper a {
+        width: 100%;
+    }
+
+    .pricing-plans__text {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .review-section .text {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .review-card {
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 16px;
+        padding: 18px;
+    }
+}

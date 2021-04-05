@@ -1,0 +1,22 @@
+.link {
+    position: relative;
+    display: inline-block;
+    color: $colorDark;
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background-color: $colorDark;
+    transition: width 0.3s ease;
+}
+
+.link:hover:before {
+    width: 100%;
+    right: auto;
+    left: 0;
+  }

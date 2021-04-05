@@ -1,0 +1,56 @@
+.pricing-plans-card {
+    display: flex;
+    flex-direction: column;
+    color: $colorDark;
+    text-align: center;
+}
+
+.pricing-plans-card__list {
+    min-height: 109px;
+    margin-bottom: 20px;
+}
+
+.pricing-plans-card__list-item {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.pricing-plans-card__title {
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.pricing-plans-card__price {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 62px;
+}
+
+.pricing-plans-card__price span {
+ margin-right: 5px;
+}
+
+.pricing-plans-card__price sup,
+.pricing-plans-card__price sub {
+    position: absolute;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
+.pricing-plans-card__price sup {
+    top: 5px;
+}
+
+.pricing-plans-card__price sub {
+    bottom: 5px;
+}
+
+.pricing-plans-card__list-item {
+    list-style-type: none;
+}
+
